@@ -1,4 +1,12 @@
 import string
+import re
+
+
+def check_format_of_input(input_value):
+    while not re.match("^[a-z]*$", input_value):
+        input_value = input("Oops! That was no valid string. Try again... ")
+
+
 open_text = input("Enter open text: ")
 key_phrase = input("Enter key phrase: ")
 
