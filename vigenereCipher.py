@@ -3,6 +3,13 @@ open_text = input("Enter open text: ")
 key_phrase = input("Enter key phrase: ")
 
 
+if len(open_text) != len(key_phrase):
+    if len(open_text) > len(key_phrase):
+        key_phrase = (int(len(open_text)/len(key_phrase)))*key_phrase
+    else:
+        open_text = (int(len(key_phrase)/len(open_text)))*open_text
+
+
 def to_numbers(word):
     return ([string.ascii_lowercase.index(char) for char in word])
 
