@@ -4,7 +4,7 @@
 
 Is a method of encrypting alphabetic text. In reality the encryption of the original text is done using the _Vigenère square_ or _Vigenère table_ where this program use math method to figure out encrypted text.
 
-To encrypt text the user should type in original text and key word. Each letter has its own value (e.g. A = 0, B =1 etc.). If we want to encrypt the word **MOPSIK**(original text) and use the key word **DOG**, then the result should be **PCVVWG** (encrypted text).
+To encrypt text the user should type in original text and key word. Each letter has its own value (e.g. A = 0, B =1 etc.). If we want to encrypt the word **MOPSIK**(original text) and use the key word **DOG**, then the result should be **PCVVWQ** (encrypted text).
 
 ## Getting started
 
