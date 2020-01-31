@@ -4,18 +4,18 @@ import re
 
 def check_format_of_input(input_value):
     while not re.match("^[a-z]*$", input_value):
-        input_value = input("Oops! That was no valid string. Try again... ")
+        input_value = input("Oops! That was not a valid string. Try again... ")
 
 
-open_text = input("Enter open text: ")
-key_phrase = input("Enter key phrase: ")
+original_text = input("Please enter original text: ")
+key_word = input("Please enter key word: ")
 
 
-if len(open_text) != len(key_phrase):
-    if len(open_text) > len(key_phrase):
-        key_phrase = (int(len(open_text)/len(key_phrase)))*key_phrase
+if len(original_text) != len(key_word):
+    if len(original_text) > len(key_word):
+        key_word = (int(len(original_text)/len(key_word)))*key_word
     else:
-        open_text = (int(len(key_phrase)/len(open_text)))*open_text
+        original_text = (int(len(key_word)/len(original_text)))*original_text
 
 
 def to_numbers(word):
@@ -35,4 +35,4 @@ def encrypt(word1, word2):
     return ''.join([string.ascii_lowercase[index] for index in new_sums])
 
 
-print(encrypt(open_text, key_phrase))
+print(encrypt(original_text, key_word))
