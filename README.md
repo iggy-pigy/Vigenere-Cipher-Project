@@ -6,6 +6,8 @@ Is a method of encrypting alphabetic text. In reality the encryption of the orig
 
 To encrypt text the user should type in original text and key word. Each letter has its own value (e.g. A = 0, B =1 etc.). If we want to encrypt the word **MOPSIK**(original text) and use the key word **DOG**, then the result should be **PCVVWQ** (encrypted text).
 
+The hosted version of the project is available here: http://iggypigy.pythonanywhere.com/
+
 ## Getting started
 
 To run this code you need **Python3**.
